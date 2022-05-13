@@ -11,16 +11,16 @@
 ### 3 - Tutorial para executar banco de dados localmente:
 #### 3.1 - Baixar MySql: 
 
-https://www.mysql.com/products/workbench/
+[MySql Workbench](https://www.mysql.com/products/workbench/)
 
 #### 3.2 - Seguir instruções de criação e inserção de dados nas tabelas:
+[Criação e inserção](https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Create_Insert.sql) 
 
-https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Create_Insert.sql
 
 
 ### 4 - Exemplos de Scripts realizados:
+[Todas as consultas](https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Consultas.sql) 
 
-https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Consultas.sql
 #### 4.1 - Consultar o nome, numero da placa, nome do fabricante e nome do modelo dos carros alugados pelos clientes:
 
 ```

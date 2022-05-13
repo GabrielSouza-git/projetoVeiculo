@@ -76,13 +76,5 @@ INNER JOIN modelo ON modelo.id_modelo = veiculo.id_modelo
 INNER JOIN fabricante ON fabricante.id_fabricante = modelo.id_fabricante
 WHERE data_devolucao is null;
 
-#11 Mostrar todas as placas que que estão com a data de devolução da reserva vencida ESSA AQUI TA ERRADA
-SELECT cliente.nome, reserva.id_reserva, fabricante.nome_fabricante, modelo.nome_modelo, veiculo.numero_placa, reserva.data_prev_devolucao from cliente
-INNER JOIN reserva ON reserva.id_cliente = cliente.id_cliente
-INNER JOIN veiculo ON veiculo.id_veiculo = reserva.id_veiculo
-INNER JOIN modelo ON modelo.id_modelo = veiculo.id_modelo
-INNER JOIN fabricante ON fabricante.id_fabricante = modelo.id_fabricante
-WHERE data_prev_devolucao < "2022-05-03";
-
 
 

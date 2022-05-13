@@ -21,7 +21,7 @@ https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Create_
 ### 4 - Exemplos de Scripts realizados:
 
 https://github.com/GabrielSouza-git/projetoVeiculo/blob/main/db_veiculos_Consultas.sql
-#### 4.1 - Saber o nome, numero da placa, nome do fabricante e nome do modelo dos carros alugados pelos clientes:
+#### 4.1 - Consultar o nome, numero da placa, nome do fabricante e nome do modelo dos carros alugados pelos clientes:
 
 ```
 select cliente.nome, veiculo.numero_placa, fabricante.nome_fabricante, modelo.nome_modelo from cliente
@@ -31,7 +31,7 @@ inner join modelo on modelo.id_modelo = veiculo.id_modelo
 inner join fabricante on fabricante.id_fabricante = modelo.id_fabricante;
 ```
 
-#### 4.2 - Saber a quantidade reservada de cada modelo e fabricante de carro:
+#### 4.2 - Consultar a quantidade reservada de cada modelo e fabricante de carro:
 ```
 select  fabricante.nome_fabricante, modelo.nome_modelo, count(*) as quantidade_modelo_alugado from cliente
 inner join reserva on reserva.id_cliente = cliente.id_cliente
@@ -40,7 +40,7 @@ inner join modelo on modelo.id_modelo = veiculo.id_modelo
 inner join fabricante on fabricante.id_fabricante = modelo.id_fabricante
 group by modelo.nome_modelo;
 ```
-#### 4.3 - Saber a quantidade reservada de cada fabricante de carro:
+#### 4.3 - Consultar a quantidade reservada de cada fabricante de carro:
 ```
 select  fabricante.nome_fabricante, count(*) as quantidade from cliente
 inner join reserva on reserva.id_cliente = cliente.id_cliente

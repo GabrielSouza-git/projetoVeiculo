@@ -1,5 +1,5 @@
 # projetoVeiculo
-
+Realização de projeto para fixação de conceitos em SQL
 ### 1 - Tecnologias Utilizadas:
 * AWS (Amazon RDS)
 * Linguagem de Banco de Dados SQL - MySQL
